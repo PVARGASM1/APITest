@@ -3,9 +3,9 @@ Prueba técnica
 
 # Prueba Técnica - API Productos
 
-Prueba técnica para Desarrollador Junior .Net + SQL. 
-En este proyecto se implementa una API REST para la gestión de productos, desarrollada en **.NET** con **Entity Framework Core** y **SQL Server**.  
-Incluye operaciones CRUD (GET, POST, PUT, DELETE), validaciones, eliminación lógica (soft delete +o cambio de estado del producto) y documentación con Swagger.
+- Prueba técnica para Desarrollador Junior .Net + SQL. 
+- En este proyecto se implementa una API REST para la gestión de productos, desarrollada en **.NET** con     **Entity        Framework Core** y **SQL Server**.  
+- Incluye operaciones CRUD (GET, POST, PUT, DELETE), validaciones, eliminación lógica (soft delete +o cambio de estado  del producto) y documentación con Swagger.
 ---
 
 ## 📋 Prerequisitos
@@ -32,8 +32,6 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado:
 2. Conéctate a tu servidor SQL.  
 3. Abre el archivo [`database.sql`](./database/database.sql).  
 4. Ejecuta el script completo.  
-
-El archivo `database.sql` contiene:
 
 
 ## Connection String
