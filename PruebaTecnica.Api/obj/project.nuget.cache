@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "dgSpecHash": "jrG1ZWwULA0=",
+  "success": true,
+  "projectFilePath": "C:\\Prueba\\APITest\\PruebaTecnica.Api\\PruebaTecnica.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andre\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.7\\microsoft.data.sqlclient.2.1.7.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.29\\microsoft.entityframeworkcore.6.0.29.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.29\\microsoft.entityframeworkcore.abstractions.6.0.29.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.29\\microsoft.entityframeworkcore.analyzers.6.0.29.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.29\\microsoft.entityframeworkcore.design.6.0.29.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.29\\microsoft.entityframeworkcore.relational.6.0.29.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.29\\microsoft.entityframeworkcore.sqlserver.6.0.29.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.29\\microsoft.entityframeworkcore.tools.6.0.29.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.identity.client\\4.21.1\\microsoft.identity.client.4.21.1.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.8.0\\microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.identitymodel.logging\\6.8.0\\microsoft.identitymodel.logging.6.8.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.8.0\\microsoft.identitymodel.protocols.6.8.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.8.0\\microsoft.identitymodel.protocols.openidconnect.6.8.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.runtime.caching\\4.7.0\\system.runtime.caching.4.7.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.7.0\\system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.IdentityModel.JsonWebTokens\" 6.8.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
+      "projectPath": "C:\\Prueba\\APITest\\PruebaTecnica.Api\\PruebaTecnica.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Prueba\\APITest\\PruebaTecnica.Api\\PruebaTecnica.Api.csproj",
+      "libraryId": "Microsoft.IdentityModel.JsonWebTokens",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1904",
+      "level": "Warning",
+      "message": "El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad crítica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj",
+      "projectPath": "C:\\Prueba\\APITest\\PruebaTecnica.Api\\PruebaTecnica.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Prueba\\APITest\\PruebaTecnica.Api\\PruebaTecnica.Api.csproj",
+      "libraryId": "System.Drawing.Common",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "El paquete \"System.IdentityModel.Tokens.Jwt\" 6.8.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
+      "projectPath": "C:\\Prueba\\APITest\\PruebaTecnica.Api\\PruebaTecnica.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Prueba\\APITest\\PruebaTecnica.Api\\PruebaTecnica.Api.csproj",
+      "libraryId": "System.IdentityModel.Tokens.Jwt",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
