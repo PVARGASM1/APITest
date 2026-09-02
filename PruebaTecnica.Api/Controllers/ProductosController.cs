@@ -42,7 +42,7 @@ namespace PruebaTecnica.Api.Controllers
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetProducto), new { id = producto.Id }, producto);
         }
-
+        //PUT: api/productos/5
         [HttpPut("{id}")]
             public async Task<IActionResult> PutProducto(int id, Producto productoActualizado)
         {
@@ -69,7 +69,7 @@ namespace PruebaTecnica.Api.Controllers
                 return StatusCode(500, new { mensaje = "Error al actualizar el producto", detalle = ex.Message });
             }
 
-            return Ok(producto); // Devuelve el producto actualizado
+            return Ok(producto); 
         }
 
         // DELETE: api/productos/5
@@ -85,7 +85,7 @@ namespace PruebaTecnica.Api.Controllers
             producto.Activo = false;
             _context.Productos.Update(producto);
             await _context.SaveChangesAsync();
-                return NoContent(new    { mensaje = "Producto desactivado (Activo=0)" });
+                return Ok(new { mensaje = "El estado del producto cambio a false" });
         }
     }
 }
