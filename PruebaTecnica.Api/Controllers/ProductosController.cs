@@ -41,14 +41,33 @@ namespace PruebaTecnica.Api.Controllers
             return CreatedAtAction(nameof(GetProducto), new { id = producto.Id }, producto);
         }
 
-        // PUT: api/productos/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutProducto(int id, Producto producto)
+            public async Task<IActionResult> PutProducto(int id, Producto productoActualizado)
         {
-            if (id != producto.Id) return BadRequest();
-            _context.Entry(producto).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-            return NoContent();
+            // Busca el producto en la base
+            var producto = await _context.Productos.FindAsync(id);
+
+            if (producto == null)
+            {
+                return NotFound(new { mensaje = "Producto no encontrado" });
+            }
+
+            // Actualizar propiedades
+            producto.Nombre = productoActualizado.Nombre;
+            producto.Precio = productoActualizado.Precio;
+            producto.Activo = productoActualizado.Activo;
+            producto.Stock = productoActualizado.Stock;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { mensaje = "Error al actualizar el producto", detalle = ex.Message });
+            }
+
+            return Ok(producto); // Devuelve el producto actualizado
         }
 
         // DELETE: api/productos/5
