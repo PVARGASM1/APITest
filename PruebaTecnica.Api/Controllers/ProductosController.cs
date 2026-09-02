@@ -28,7 +28,9 @@ namespace PruebaTecnica.Api.Controllers
         public async Task<ActionResult<Producto>> GetProducto(int id)
         {
             var producto = await _context.Productos.FindAsync(id);
-            if (producto == null) return NotFound();
+            if (producto == null) {
+                    return NotFound(new { mensaje = "Producto no encontrado" });
+            }
             return producto;
         }
 
@@ -75,10 +77,15 @@ namespace PruebaTecnica.Api.Controllers
         public async Task<IActionResult> DeleteProducto(int id)
         {
             var producto = await _context.Productos.FindAsync(id);
-            if (producto == null) return NotFound();
-            _context.Productos.Remove(producto);
+            if (producto == null) {
+                return NotFound(new { mensaje = "Producto no encontrado" });
+            }
+
+            //Cambiar de activo a false en lugar de eliminar el producto
+            producto.Activo = false;
+            _context.Productos.Update(producto);
             await _context.SaveChangesAsync();
-            return NoContent();
+                return NoContent(new    { mensaje = "Producto desactivado (Activo=0)" });
         }
     }
 }
